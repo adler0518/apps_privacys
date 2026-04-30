@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronPulse - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background-color: #fbfbfd;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+        .header .subtitle {
+            font-size: 18px;
+            color: #6e6e73;
+            margin-bottom: 8px;
+        }
+        .header .app-info {
+            font-size: 14px;
+            color: #86868b;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .language-toggle {
+            text-align: center;
+            margin-bottom: 36px;
+            padding: 16px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .language-toggle button {
+            padding: 8px 24px;
+            margin: 0 8px;
+            border: 1px solid #d2d2d7;
+            border-radius: 20px;
+            background: #fff;
+            color: #0071e3;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .language-toggle button.active {
+            background: #0071e3;
+            color: #fff;
+            border-color: #0071e3;
+        }
+        .language-toggle button:hover {
+            background: #0077ed;
+            color: #fff;
+        }
+        .section {
+            margin-bottom: 36px;
+        }
+        .section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #0071e3;
+            display: inline-block;
+        }
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin: 16px 0 8px;
+        }
+        .section p {
+            margin-bottom: 12px;
+            color: #424245;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f8ff 0%, #e8f5e9 100%);
+            border-left: 4px solid #34c759;
+            padding: 20px 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+        .highlight-box p {
+            color: #1d1d1f;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        ul {
+            margin: 12px 0 12px 24px;
+            color: #424245;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        }
+        .data-table th {
+            background: #f5f5f7;
+            padding: 14px 20px;
+            text-align: left;
+            font-weight: 600;
+            color: #1d1d1f;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .data-table td {
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            color: #424245;
+        }
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        .badge-yes {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        .badge-no {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            background: #fce4ec;
+            color: #c62828;
+        }
+        .badge-info {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #86868b;
+            font-size: 14px;
+        }
+        .effective-date {
+            text-align: center;
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 32px;
+        }
+        /* Chinese styles */
+        .lang-zh {
+            display: none;
+        }
+        .lang-zh .section h2 {
+            border-bottom-color: #0071e3;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px;
+            }
+            .header h1 {
+                font-size: 28px;
+            }
+            .section h2 {
+                font-size: 20px;
+            }
+            .data-table {
+                font-size: 14px;
+            }
+            .data-table th, .data-table td {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="app-icon">IP</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle" lang="en">IronPulse</p>
+            <p class="app-info">Bundle ID: com.xiadu.ironpulse | Developer: xiadu | Category: Health &amp; Fitness</p>
+        </div>
+
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <button id="btn-en" class="active" onclick="switchLang('en')">English</button>
+            <button id="btn-zh" onclick="switchLang('zh')">中文</button>
+        </div>
+
+        <!-- English Content -->
+        <div class="lang-en" id="content-en">
+            <p class="effective-date">Effective Date: April 30, 2026</p>
+
+            <div class="highlight-box">
+                <p>IronPulse does NOT collect, store, or transmit any personal data. All data is stored locally on your device only.</p>
+            </div>
+
+            <div class="section">
+                <h2>1. Introduction</h2>
+                <p>IronPulse ("we", "our", or "us") is a fitness and workout tracking application developed by xiadu. This Privacy Policy describes how IronPulse handles your information when you use our application.</p>
+                <p>We are committed to protecting your privacy. This app is designed to work entirely offline without collecting, transmitting, or sharing any of your personal information.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Information We Do NOT Collect</h2>
+                <p>IronPulse does <strong>not</strong> collect, store, or transmit any of the following types of data:</p>
+                <ul>
+                    <li><strong>Personal Identifiers:</strong> We do not collect names, email addresses, phone numbers, or any other personal identifiers.</li>
+                    <li><strong>Health &amp; Fitness Data:</strong> We do not use HealthKit or collect any health data from Apple Health.</li>
+                    <li><strong>Location Data:</strong> We do not track or collect your location.</li>
+                    <li><strong>Contact Information:</strong> We do not access your contacts.</li>
+                    <li><strong>Photos &amp; Media:</strong> We do not access your photo library.</li>
+                    <li><strong>Financial Information:</strong> We do not collect any payment or financial data.</li>
+                    <li><strong>Usage Data:</strong> We do not use any analytics SDKs to track your app usage.</li>
+                    <li><strong>Device Identifiers:</strong> We do not collect device identifiers, advertising IDs, or tracking data.</li>
+                    <li><strong>Audio Data:</strong> We do not record, store, or transmit any audio data. Microphone access is used solely for real-time voice interaction during workouts.</li>
+                </ul>
+                <p><strong>IronPulse does not make any network requests.</strong> The app functions entirely offline.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Data Stored on Your Device</h2>
+                <p>All data generated by IronPulse is stored <strong>locally on your device</strong> using Apple's UserDefaults API. This includes:</p>
+                <ul>
+                    <li>Workout records and training history</li>
+                    <li>User preferences and app settings</li>
+                    <li>Achievements and progress tracking</li>
+                    <li>Configuration data</li>
+                </ul>
+                <p>This data <strong>never leaves your device</strong>. It is not uploaded to any server, cloud service, or third-party system. If you delete the app, all locally stored data will be permanently removed from your device.</p>
+                <p><strong>iCloud Sync:</strong> IronPulse does not use iCloud or any cloud synchronization service. Your data remains exclusively on the device where it was created.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Permissions Used</h2>
+                <p>IronPulse requests the following system permission:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Purpose</th>
+                            <th>Data Collected</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Microphone</td>
+                            <td>Used for voice interaction features during workout sessions</td>
+                            <td><span class="badge-no">No data stored or transmitted</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Important:</strong> The microphone is used only for real-time voice interaction during training. No audio is recorded, stored, or transmitted anywhere. You can deny this permission at any time through your device Settings; the app will continue to function with reduced voice interaction capabilities.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Third-Party Services</h2>
+                <p>IronPulse does <strong>not</strong> integrate with any third-party services, including but not limited to:</p>
+                <ul>
+                    <li>Analytics services (e.g., Firebase Analytics, Google Analytics)</li>
+                    <li>Advertising networks</li>
+                    <li>Crash reporting services</li>
+                    <li>Social media SDKs</li>
+                    <li>Cloud storage services</li>
+                </ul>
+                <p>The app contains no network calls and operates entirely offline.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Data Security</h2>
+                <p>Since all data is stored locally on your device and never transmitted over any network, your data is protected by your device's built-in security features, including:</p>
+                <ul>
+                    <li>iOS sandboxing and data protection</li>
+                    <li>Device passcode, Face ID, or Touch ID</li>
+                    <li>File system encryption provided by iOS</li>
+                </ul>
+                <p>Because the app does not transmit any data over networks, there is no risk of data interception during transmission.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Your Rights</h2>
+                <p>You have full control over your data:</p>
+                <ul>
+                    <li><strong>Delete Data:</strong> You can delete all app data by uninstalling IronPulse from your device. This will permanently remove all locally stored data.</li>
+                    <li><strong>Manage Permissions:</strong> You can manage app permissions at any time through Settings &gt; Privacy on your iOS device.</li>
+                    <li><strong>No Account Required:</strong> IronPulse does not require user registration or account creation.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>8. Children's Privacy</h2>
+                <p>IronPulse does not knowingly collect any personal information from children under the age of 13. Since the app does not collect any personal data whatsoever, it is safe for users of all ages. We encourage parents and guardians to supervise their children's use of fitness applications.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. Any changes will be reflected in an updated version of this page with a new effective date. We encourage you to review this policy periodically.</p>
+            </div>
+
+            <div class="section">
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+                <p><strong>Developer:</strong> xiadu<br>
+                <strong>Email:</strong> Please contact through App Store Connect</p>
+            </div>
+
+            <div class="section">
+                <h2>11. App Store Privacy Labels Summary</h2>
+                <p>The table below summarizes IronPulse's data practices in relation to Apple's App Store privacy labels:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data Category</th>
+                            <th>Collected?</th>
+                            <th>Linked to User?</th>
+                            <th>Used for Tracking?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Contact Info</td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                        </tr>
+                        <tr>
+                            <td>Health &amp; Fitness</td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                        </tr>
+                        <tr>
+                            <td>Usage Data</td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                        </tr>
+                        <tr>
+                            <td>Diagnostics</td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                        </tr>
+                        <tr>
+                            <td>Identifiers</td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                        </tr>
+                        <tr>
+                            <td>Photos</td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                        </tr>
+                        <tr>
+                            <td>Audio Data</td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                            <td><span class="badge-no">No</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Summary:</strong> IronPulse does not collect any data. All workout records, settings, and achievements are stored locally on your device only.</p>
+            </div>
+        </div>
+
+        <!-- Chinese Content -->
+        <div class="lang-zh" id="content-zh">
+            <p class="effective-date">生效日期：2026年4月30日</p>
+
+            <div class="highlight-box">
+                <p>IronPulse 不收集、存储或传输任何个人数据。所有数据仅存储在您的设备上。</p>
+            </div>
+
+            <div class="section">
+                <h2>1. 简介</h2>
+                <p>IronPulse（以下简称"我们"）是由 xiadu 开发的一款健身和训练记录应用。本隐私政策描述了当您使用我们的应用时，IronPulse 如何处理您的信息。</p>
+                <p>我们致力于保护您的隐私。本应用设计为完全离线运行，不收集、传输或共享您的任何个人信息。</p>
+            </div>
+
+            <div class="section">
+                <h2>2. 我们不收集的信息</h2>
+                <p>IronPulse <strong>不</strong>收集、存储或传输以下任何类型的数据：</p>
+                <ul>
+                    <li><strong>个人标识信息：</strong>我们不收集姓名、电子邮件地址、电话号码或其他个人标识信息。</li>
+                    <li><strong>健康与健身数据：</strong>我们不使用 HealthKit，也不从 Apple 健康中收集任何健康数据。</li>
+                    <li><strong>位置数据：</strong>我们不追踪或收集您的位置信息。</li>
+                    <li><strong>联系人信息：</strong>我们不访问您的通讯录。</li>
+                    <li><strong>照片与媒体：</strong>我们不访问您的照片库。</li>
+                    <li><strong>财务信息：</strong>我们不收集任何支付或财务数据。</li>
+                    <li><strong>使用数据：</strong>我们不使用任何分析 SDK 来追踪您的应用使用情况。</li>
+                    <li><strong>设备标识符：</strong>我们不收集设备标识符、广告标识符或追踪数据。</li>
+                    <li><strong>音频数据：</strong>我们不录制、存储或传输任何音频数据。麦克风权限仅用于训练期间的实时语音交互。</li>
+                </ul>
+                <p><strong>IronPulse 不进行任何网络请求。</strong>应用完全在离线状态下运行。</p>
+            </div>
+
+            <div class="section">
+                <h2>3. 存储在您设备上的数据</h2>
+                <p>IronPulse 生成的所有数据均<strong>本地存储在您的设备上</strong>，使用 Apple 的 UserDefaults API 存储。包括：</p>
+                <ul>
+                    <li>训练记录和训练历史</li>
+                    <li>用户偏好和应用设置</li>
+                    <li>成就和进度追踪</li>
+                    <li>配置数据</li>
+                </ul>
+                <p>这些数据<strong>永远不会离开您的设备</strong>。它们不会被上传到任何服务器、云服务或第三方系统。如果您删除应用，所有本地存储的数据将从您的设备中永久移除。</p>
+                <p><strong>iCloud 同步：</strong>IronPulse 不使用 iCloud 或任何云同步服务。您的数据仅保留在创建它的设备上。</p>
+            </div>
+
+            <div class="section">
+                <h2>4. 使用的权限</h2>
+                <p>IronPulse 请求以下系统权限：</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>权限</th>
+                            <th>用途</th>
+                            <th>数据收集</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>麦克风</td>
+                            <td>用于训练会话中的语音交互功能</td>
+                            <td><span class="badge-no">不存储或传输任何数据</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>重要说明：</strong>麦克风仅用于训练期间的实时语音交互。不会录制、存储或传输任何音频。您可以随时通过设备"设置"拒绝此权限；应用将在减少语音交互功能的情况下继续正常运行。</p>
+            </div>
+
+            <div class="section">
+                <h2>5. 第三方服务</h2>
+                <p>IronPulse <strong>不</strong>集成任何第三方服务，包括但不限于：</p>
+                <ul>
+                    <li>分析服务（如 Firebase Analytics、Google Analytics）</li>
+                    <li>广告网络</li>
+                    <li>崩溃报告服务</li>
+                    <li>社交媒体 SDK</li>
+                    <li>云存储服务</li>
+                </ul>
+                <p>本应用不包含任何网络调用，完全离线运行。</p>
+            </div>
+
+            <div class="section">
+                <h2>6. 数据安全</h2>
+                <p>由于所有数据均本地存储在您的设备上且从不通过网络传输，您的数据受到设备内置安全功能的保护，包括：</p>
+                <ul>
+                    <li>iOS 沙盒和数据保护机制</li>
+                    <li>设备密码、Face ID 或 Touch ID</li>
+                    <li>iOS 提供的文件系统加密</li>
+                </ul>
+                <p>由于应用不通过网络传输任何数据，因此不存在数据传输过程中被截获的风险。</p>
+            </div>
+
+            <div class="section">
+                <h2>7. 您的权利</h2>
+                <p>您对自己的数据拥有完全的控制权：</p>
+                <ul>
+                    <li><strong>删除数据：</strong>您可以从设备上卸载 IronPulse 来删除所有应用数据。这将永久移除所有本地存储的数据。</li>
+                    <li><strong>管理权限：</strong>您可以随时通过 iOS 设备上的"设置 &gt; 隐私"管理应用权限。</li>
+                    <li><strong>无需注册账号：</strong>IronPulse 不要求用户注册或创建账号。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>8. 儿童隐私</h2>
+                <p>IronPulse 不会有意收集 13 岁以下儿童的任何个人信息。由于本应用不收集任何个人数据，因此对所有年龄段的用户都是安全的。我们鼓励家长和监护人监督孩子使用健身类应用。</p>
+            </div>
+
+            <div class="section">
+                <h2>9. 政策变更</h2>
+                <p>我们可能会不时更新本隐私政策。任何变更将在本页面更新版本中体现，并注明新的生效日期。我们建议您定期查阅本政策。</p>
+            </div>
+
+            <div class="section">
+                <h2>10. 联系我们</h2>
+                <p>如果您对本隐私政策有任何疑问或意见，请通过以下方式联系我们：</p>
+                <p><strong>开发者：</strong>xiadu<br>
+                <strong>电子邮箱：</strong>请通过 App Store Connect 联系</p>
+            </div>
+
+            <div class="section">
+                <h2>11. App Store 隐私标签摘要</h2>
+                <p>下表总结了 IronPulse 在 Apple App Store 隐私标签方面的数据实践：</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>数据类别</th>
+                            <th>是否收集？</th>
+                            <th>是否与用户关联？</th>
+                            <th>是否用于追踪？</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>联系信息</td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                        </tr>
+                        <tr>
+                            <td>健康与健身</td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                        </tr>
+                        <tr>
+                            <td>使用数据</td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                        </tr>
+                        <tr>
+                            <td>诊断数据</td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                        </tr>
+                        <tr>
+                            <td>标识符</td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                        </tr>
+                        <tr>
+                            <td>位置</td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                        </tr>
+                        <tr>
+                            <td>照片</td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                        </tr>
+                        <tr>
+                            <td>音频数据</td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                            <td><span class="badge-no">否</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>总结：</strong>IronPulse 不收集任何数据。所有训练记录、设置和成就仅存储在您的设备本地。</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Copyright &copy; 2026 xiadu. All rights reserved.</p>
+            <p>IronPulse - Your Personal Fitness Companion</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            var enContent = document.getElementById('content-en');
+            var zhContent = document.getElementById('content-zh');
+            var btnEn = document.getElementById('btn-en');
+            var btnZh = document.getElementById('btn-zh');
+
+            if (lang === 'zh') {
+                enContent.style.display = 'none';
+                zhContent.style.display = 'block';
+                btnEn.classList.remove('active');
+                btnZh.classList.add('active');
+                document.documentElement.lang = 'zh';
+            } else {
+                enContent.style.display = 'block';
+                zhContent.style.display = 'none';
+                btnEn.classList.add('active');
+                btnZh.classList.remove('active');
+                document.documentElement.lang = 'en';
+            }
+        }
+
+        // Initialize: show English by default
+        document.getElementById('content-zh').style.display = 'none';
+    </script>
+</body>
+</html>
