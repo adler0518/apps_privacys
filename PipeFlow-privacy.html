@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Pipe Flow</title>
+<style>
+  :root {
+    --fg: #1d1d1f;
+    --fg-muted: #6e6e73;
+    --bg: #ffffff;
+    --bg-alt: #f5f5f7;
+    --accent: #0071e3;
+    --border: #d2d2d7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  header .sub {
+    color: var(--fg-muted);
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  p, li { font-size: 16px; color: var(--fg); }
+  .muted { color: var(--fg-muted); }
+  ul { padding-left: 20px; }
+  .callout {
+    background: var(--bg-alt);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 8px;
+    font-size: 15px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: var(--bg-alt); font-weight: 600; }
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    background: #e8f3ff;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--fg-muted);
+    font-size: 14px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #f5f5f7;
+      --fg-muted: #a1a1a6;
+      --bg: #000000;
+      --bg-alt: #1c1c1e;
+      --border: #3a3a3c;
+    }
+    .tag { background: #14304f; color: #7fb8ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Privacy Policy</h1>
+    <div class="sub">Pipe Flow &middot; Last updated: May 14, 2026</div>
+    <span class="tag">100% Offline &middot; No Data Collected</span>
+  </header>
+
+  <div class="callout">
+    <strong>Short version:</strong> Pipe Flow runs entirely on your device.
+    It does not connect to the internet, does not create accounts, does not ask
+    for any system permission, and does not collect any personal data.
+    Uninstalling the app removes everything.
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>This Privacy Policy explains how the Pipe Flow iOS application
+  ("Pipe Flow", "the app", "we", "us") handles information. By installing
+  or using the app you agree to the practices described below.</p>
+
+  <h2>2. Information We Do NOT Collect</h2>
+  <p>We do not collect, transmit, sell, share, or monetize any user data.
+  Specifically, the app does not collect:</p>
+  <ul>
+    <li>Name, email, phone number, or any contact information</li>
+    <li>Device identifiers (IDFA, IDFV, advertising IDs)</li>
+    <li>Location data</li>
+    <li>Contacts, photos, camera feed, microphone audio</li>
+    <li>Health, financial, or sensitive information</li>
+    <li>Browsing history, search history, usage analytics</li>
+    <li>Crash reports or diagnostic logs sent to any remote server</li>
+  </ul>
+
+  <h2>3. Data Stored Only on Your Device</h2>
+  <p>The following data is saved locally via iOS <code>UserDefaults</code>
+  and never leaves your device:</p>
+  <ul>
+    <li>Highest unlocked level and total number of levels cleared</li>
+    <li>Best completion time per level</li>
+    <li>Total rotation counter (gameplay statistic)</li>
+    <li>Your toggles for sound, haptics, and flow highlight</li>
+  </ul>
+  <p class="muted">This data is used solely to render the app UI and
+  resume your game. It is not accessible to us.</p>
+
+  <h2>4. Third-Party Services</h2>
+  <p>Pipe Flow contains <strong>no third-party SDKs</strong>. It does not
+  integrate analytics, advertising networks, crash-reporting services, or
+  cloud backends of any kind.</p>
+
+  <h2>5. System Permissions</h2>
+  <p>The app does not request any iOS system permission. No camera,
+  microphone, photo library, location, contacts, motion, notification, or
+  Bluetooth access is ever requested.</p>
+
+  <h2>6. Network Usage</h2>
+  <p>Pipe Flow does not make any network request. The app works fully in
+  airplane mode. You can block the app from accessing the network at the
+  OS level without any impact on functionality.</p>
+
+  <h2>7. Data Security</h2>
+  <p>Because no data ever leaves your device, there is no transmission to
+  secure. Locally stored preferences and progress are protected by iOS
+  sandboxing and the built-in Data Protection features of your device.</p>
+
+  <h2>8. Data Deletion</h2>
+  <p>To delete all Pipe Flow data, simply delete the app from your device.
+  iOS will remove the app's sandbox, which erases every saved preference,
+  level progress record, and best-time entry.</p>
+
+  <h2>9. Children's Privacy</h2>
+  <p>Pipe Flow is safe for all ages. It does not collect any personal
+  information, including from children. There are no in-app purchases, no
+  external links, no chat, and no advertising.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this policy to reflect changes to the app or legal
+  requirements. Updates will be posted at this URL with a revised "Last
+  updated" date.</p>
+
+  <h2>11. Contact Us</h2>
+  <p>Questions about this privacy policy? Email
+  <a href="mailto:pipeflow.support@icloud.com">pipeflow.support@icloud.com</a>.</p>
+
+  <h2>Apple App Privacy Labels</h2>
+  <table>
+    <thead>
+      <tr><th>Data Category</th><th>Collected</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Contact Info</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Health &amp; Fitness</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Financial Info</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Location</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Sensitive Info</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Contacts</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>User Content (photos, audio, etc.)</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Browsing History</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Search History</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Identifiers (IDFA/IDFV)</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Purchases</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Usage Data / Analytics</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Diagnostics / Crash Data</td><td>No</td><td>&mdash;</td></tr>
+      <tr><td>Other Data</td><td>No</td><td>&mdash;</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">Summary: <strong>Data Not Collected</strong>.</p>
+
+  <footer>
+    &copy; 2026 Pipe Flow. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>
