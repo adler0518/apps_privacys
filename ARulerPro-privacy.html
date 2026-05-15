@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARuler Pro — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #007aff;
+    --rule: #d2d2d7;
+    --card: #f5f5f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.022em;
+    margin: 0 0 8px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 48px 0 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p, li { font-size: 17px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    background: var(--card);
+    font-weight: 600;
+  }
+  .badge-no {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: #e7f7ec;
+    color: #138a36;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .badge-yes {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: #fff3e0;
+    color: #b86500;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 64px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">ARuler Pro &middot; Last updated: May 15, 2026</p>
+  </header>
+
+  <h2>1. Introduction</h2>
+  <p>This Privacy Policy explains how <strong>ARuler Pro</strong> ("the App", "we", "us") handles information when you use it on your iOS device. ARuler Pro is an offline AR measuring tool. Your privacy is fundamental to how the App is designed.</p>
+
+  <h2>2. Information We Do <em>NOT</em> Collect</h2>
+  <p>ARuler Pro does <strong>not</strong> collect, transmit, sell, or share any of the following:</p>
+  <ul>
+    <li>Personal information (name, email, phone number, address)</li>
+    <li>Account credentials (the App does not require an account)</li>
+    <li>Device identifiers (IDFA, IDFV, MAC address)</li>
+    <li>Precise or coarse location</li>
+    <li>Contacts, calendars, reminders, photos library, or files</li>
+    <li>Camera frames, AR session captures, or LiDAR depth data</li>
+    <li>Usage analytics or behavioral data</li>
+    <li>Crash reports sent to third parties</li>
+  </ul>
+
+  <h2>3. Data Stored on Your Device</h2>
+  <p>The App stores the following <strong>locally</strong> using Apple's SwiftData framework. This data never leaves your device:</p>
+  <table>
+    <thead><tr><th>Data Type</th><th>Purpose</th><th>Where Stored</th></tr></thead>
+    <tbody>
+      <tr><td>Measurement records (length, area, angle values)</td><td>To allow you to revisit past measurements</td><td>On-device SwiftData store</td></tr>
+      <tr><td>Project metadata (project name, notes, timestamps)</td><td>To organize your measurements</td><td>On-device SwiftData store</td></tr>
+      <tr><td>App preferences (units, theme)</td><td>To remember your settings</td><td>On-device UserDefaults</td></tr>
+      <tr><td>Subscription receipt</td><td>To validate Pro subscription status</td><td>iOS Keychain / StoreKit (Apple)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Camera Access</h2>
+  <p>ARuler Pro requests <strong>Camera</strong> permission so that ARKit can render the live AR view used for measurement. The camera feed and any AR/LiDAR depth information are processed entirely on-device in real time and are <strong>never recorded, saved, or transmitted</strong>. You may revoke camera access at any time in <em>Settings &gt; Privacy &amp; Security &gt; Camera &gt; ARuler Pro</em>; without it the AR measuring feature cannot operate.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <div class="card">
+    <p><strong>The App integrates only Apple system frameworks</strong> (ARKit, SceneKit, SwiftUI, SwiftData, StoreKit). It includes no third-party analytics, advertising, attribution, or crash-reporting SDKs.</p>
+    <p>In-app purchases (Pro subscription) are processed by Apple StoreKit. Apple's handling of those transactions is governed by the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>.</p>
+  </div>
+
+  <h2>6. Data Security</h2>
+  <p>Because all data remains on your device, the security of that data is protected by iOS itself. The App uses standard iOS sandboxing and does not transmit data over a network.</p>
+
+  <h2>7. Data Deletion</h2>
+  <p>You can delete individual measurements or projects within the App at any time. To delete <strong>all</strong> data the App has stored, simply uninstall ARuler Pro from your device. iOS will remove the App's sandbox and all associated local data.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>ARuler Pro is suitable for general audiences. We do not knowingly collect any data from children. Because the App collects no personal data at all, it complies with the U.S. Children's Online Privacy Protection Act (COPPA) by design.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top of this page reflects the most recent revision. Material changes will be communicated through an App update.</p>
+
+  <h2>10. Contact Us</h2>
+  <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+  <div class="card">
+    <p style="margin:0"><strong>Email:</strong> <a href="mailto:support@aruler.pro">support@aruler.pro</a></p>
+  </div>
+
+  <h2>11. Apple App Privacy Labels</h2>
+  <p>For App Store transparency, the following table summarizes the data categories used by the App, in line with Apple's App Privacy disclosure framework:</p>
+  <table>
+    <thead><tr><th>Category</th><th>Collected</th><th>Linked to You</th><th>Used to Track</th></tr></thead>
+    <tbody>
+      <tr><td>Contact Info</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Health &amp; Fitness</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Financial Info</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Location</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Sensitive Info</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Contacts</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>User Content (Photos, Videos)</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Browsing History</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Search History</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Identifiers</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Purchases</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Usage Data</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Diagnostics</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Other Data</td><td><span class="badge-no">No</span></td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p style="color:var(--muted);font-size:14px">Result: <strong>Data Not Collected</strong>.</p>
+
+  <footer>
+    &copy; 2026 ARuler Pro. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>
