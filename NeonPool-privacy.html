@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeonPool — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #0071e3;
+    --border: #d2d2d7;
+    --table-bg: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --fg: #f5f5f7;
+      --muted: #86868b;
+      --accent: #2997ff;
+      --border: #3a3a3c;
+      --table-bg: #1c1c1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+  }
+  header .meta {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 56px 0 16px;
+    padding-top: 8px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 32px 0 12px;
+  }
+  p { margin: 0 0 16px; }
+  ul { padding-left: 24px; margin: 0 0 16px; }
+  li { margin-bottom: 8px; }
+  strong { font-weight: 600; }
+  code {
+    background: var(--table-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 15px;
+  }
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    background: var(--table-bg);
+    font-weight: 600;
+  }
+  .callout {
+    background: var(--table-bg);
+    border-left: 4px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 24px 0;
+  }
+  footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="meta">NeonPool · Effective Date: May 15, 2026 · Last Updated: May 15, 2026</p>
+</header>
+
+<h2>1. Introduction</h2>
+<p>Welcome to <strong>NeonPool</strong> (the "App"). NeonPool is a single-player neon-styled 8-ball pool puzzle game with 30 hand-crafted levels. This Privacy Policy explains our approach to user privacy. In short: <strong>NeonPool does not collect, transmit, or share any personal data</strong>. The App is designed to run entirely offline on your device.</p>
+
+<div class="callout">
+  <strong>TL;DR</strong> — NeonPool is a 100% offline game. We do not collect any data. We do not request any permissions. We do not include any third-party tracking, analytics, or advertising SDKs. Your gameplay progress is stored only on your device.
+</div>
+
+<h2>2. Information We Do NOT Collect</h2>
+<p>NeonPool is built with privacy as a default. We do <strong>not</strong> collect, process, store, or transmit any of the following:</p>
+<ul>
+  <li><strong>Personal identifiers</strong> — no name, email, phone number, account, IDFA, or device identifier.</li>
+  <li><strong>Location data</strong> — the App does not access GPS or any location services.</li>
+  <li><strong>Contacts, photos, microphone, or camera</strong> — the App does not request any of these permissions.</li>
+  <li><strong>Usage analytics</strong> — no telemetry, crash reporting service, A/B testing, or behavioral tracking.</li>
+  <li><strong>Network requests</strong> — the App makes no outbound HTTP, WebSocket, or other network connections.</li>
+  <li><strong>Financial information</strong> — there are no in-app purchases, subscriptions, or advertisements.</li>
+</ul>
+
+<h2>3. Data Stored on Your Device</h2>
+<p>To preserve your gameplay experience, NeonPool stores the following information <strong>locally only</strong>, using Apple's standard <code>UserDefaults</code> API:</p>
+<ul>
+  <li><strong>Level progress</strong> — which of the 30 levels you have unlocked and the best record (stars / shots / time) for each level.</li>
+  <li><strong>Settings</strong> — your preferences for sound effects, background music, and haptic feedback.</li>
+</ul>
+<p>This data never leaves your device. It is sandboxed by iOS to NeonPool only and is automatically removed when you uninstall the App.</p>
+
+<h2>4. Third-Party Services</h2>
+<p>NeonPool <strong>does not integrate any third-party SDKs</strong>. The App is built entirely on Apple's first-party frameworks:</p>
+<ul>
+  <li><code>SwiftUI</code> — user interface</li>
+  <li><code>SpriteKit</code> — physics simulation and rendering</li>
+  <li><code>AVFoundation</code> — local sound effects playback</li>
+  <li><code>UIKit</code> / <code>Foundation</code> — system utilities</li>
+</ul>
+<p>No external servers, no analytics providers, no advertising networks, no social SDKs.</p>
+
+<h2>5. Data Security</h2>
+<p>Because NeonPool does not collect or transmit any data, there is no risk of remote breach or interception. All settings and progress are stored within iOS's standard application sandbox, which is encrypted at rest by the operating system when device-level encryption is enabled (default on all modern iPhones with a passcode).</p>
+
+<h2>6. Data Deletion</h2>
+<p>You can delete all data created by NeonPool at any time using either of these methods:</p>
+<ul>
+  <li><strong>Reset progress in-app</strong> — open the Settings screen and tap "Reset Progress" to clear all level records and unlocked levels.</li>
+  <li><strong>Uninstall the App</strong> — removing NeonPool from your device permanently deletes all local data, including settings and progress.</li>
+</ul>
+
+<h2>7. Children's Privacy</h2>
+<p>NeonPool is suitable for users of all ages. Because we do not collect any personal information from anyone, we do not knowingly collect personal information from children under 13 (or the equivalent minimum age in your jurisdiction). The App is fully compliant with the Children's Online Privacy Protection Act (COPPA) and similar regulations by virtue of collecting nothing.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time, for example to reflect changes in functionality or applicable law. The "Last Updated" date at the top of this page will always indicate the most recent revision. Continued use of NeonPool after an update constitutes acceptance of the revised policy. Material changes will be communicated through an in-app notice or a new App Store release note.</p>
+
+<h2>9. Contact Us</h2>
+<p>If you have any questions or concerns about this Privacy Policy or NeonPool's privacy practices, please contact us:</p>
+<ul>
+  <li><strong>Developer</strong> — NeonPool Studio</li>
+  <li><strong>Email</strong> — <a href="mailto:adler0518@github.io">adler0518@github.io</a></li>
+</ul>
+
+<h2>10. Apple App Privacy Labels</h2>
+<p>The following table mirrors the privacy disclosures we declare in App Store Connect for NeonPool:</p>
+<table>
+  <thead>
+    <tr><th>Data Type</th><th>Collected</th><th>Linked to You</th><th>Used for Tracking</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Contact Info</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Health &amp; Fitness</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Financial Info</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Location</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Sensitive Info</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Contacts</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>User Content</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Browsing History</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Search History</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Identifiers</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Purchases</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Usage Data</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Diagnostics</td><td>No</td><td>—</td><td>—</td></tr>
+    <tr><td>Other Data</td><td>No</td><td>—</td><td>—</td></tr>
+  </tbody>
+</table>
+<p><strong>Summary</strong>: NeonPool collects <strong>no</strong> data. No data is linked to your identity. No data is used for tracking purposes.</p>
+
+<footer>
+  © 2026 NeonPool Studio · All rights reserved.
+</footer>
+
+</div>
+</body>
+</html>
