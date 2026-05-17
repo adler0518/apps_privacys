@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stock Alert — Privacy Policy</title>
+<style>
+  :root {
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #0a7c4a;
+    --bg: #ffffff;
+    --card: #f5f5f7;
+    --line: #d2d2d7;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 36px;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  header .meta {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 17px;
+    margin: 24px 0 8px;
+  }
+  p, li { font-size: 16px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin: 20px 0;
+  }
+  .accent { color: var(--accent); font-weight: 600; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  th { background: var(--card); font-weight: 600; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Stock Alert — Privacy Policy</h1>
+  <div class="meta">Effective Date: May 15, 2026 · Last Updated: May 15, 2026</div>
+</header>
+
+<section>
+  <h2>1. Introduction</h2>
+  <p>
+    Stock Alert ("we", "the App", or "盯盘提醒") is a lightweight stock-price alerting tool
+    that helps users monitor A-share, Hong Kong, and US-listed stocks and ring an alarm-grade
+    notification when a user-defined percent threshold is crossed.
+  </p>
+  <p>
+    This Privacy Policy explains, in plain language, what data the App handles. The short
+    version: <span class="accent">we do not collect, transmit, or sell any of your personal
+    data.</span> Everything you create stays on your device.
+  </p>
+</section>
+
+<section>
+  <h2>2. Information We Do NOT Collect</h2>
+  <p>The App does <strong>not</strong> collect any of the following:</p>
+  <ul>
+    <li>Personally identifiable information (name, email, phone number, ID, etc.)</li>
+    <li>Account credentials — there is no sign-up and no login</li>
+    <li>Brokerage / trading account information — the App is not connected to any broker</li>
+    <li>Financial holdings, balances, or transaction history</li>
+    <li>Precise or coarse location</li>
+    <li>Contacts, photos, microphone or camera data</li>
+    <li>Device identifiers used for advertising or tracking (IDFA / IDFV)</li>
+    <li>Crash reports or analytics from any third-party SDK</li>
+  </ul>
+</section>
+
+<section>
+  <h2>3. Data Stored on Your Device</h2>
+  <p>
+    All user-generated content is stored locally on your device using Apple's
+    <code>SwiftData</code> framework. This includes:
+  </p>
+  <div class="card">
+    <ul>
+      <li><strong>Watchlist</strong> — the stock codes (e.g. <code>sh600519</code>,
+        <code>00700</code>, <code>aapl</code>) you choose to monitor, plus the latest
+        price snapshot received from the public quote endpoint.</li>
+      <li><strong>Alert rules</strong> — the percent threshold, direction (up / down /
+        both), time window, and cooldown settings you configure.</li>
+      <li><strong>History</strong> — a local log of past alert triggers for your own review.</li>
+      <li><strong>App preferences</strong> — toggles such as background polling on/off,
+        stored via <code>UserDefaults</code>.</li>
+    </ul>
+  </div>
+  <p>
+    None of this data is transmitted off-device. Removing the App removes all of it.
+  </p>
+</section>
+
+<section>
+  <h2>4. Network Requests</h2>
+  <p>
+    To display real-time quotes, the App fetches public market data from the
+    Sina Finance public endpoint:
+  </p>
+  <div class="card">
+    <code>https://hq.sinajs.cn/list=&lt;your_codes&gt;</code>
+  </div>
+  <p>
+    Only the stock codes you added to your watchlist are sent in the URL. No personal
+    identifiers, account information, or device identifiers are attached. We do not
+    operate any server of our own; quotes are returned directly from Sina Finance to
+    your device. We do not log, mirror, or relay these requests.
+  </p>
+</section>
+
+<section>
+  <h2>5. Third-Party Services</h2>
+  <p>
+    The App does not integrate any third-party analytics, advertising, attribution,
+    or crash-reporting SDK. The only external network endpoint contacted is the
+    public Sina Finance quote URL described in section&nbsp;4.
+  </p>
+</section>
+
+<section>
+  <h2>6. Permissions Used</h2>
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Why it is used</th><th>Required?</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Notifications</td>
+        <td>To deliver local alarm-grade alerts when your price thresholds are hit.</td>
+        <td>Recommended; can be denied — alerts will still fire in foreground only.</td>
+      </tr>
+      <tr>
+        <td>Background App Refresh</td>
+        <td>To poll quotes on a system-scheduled cadence so monitoring continues
+          while the App is closed.</td>
+        <td>Recommended; can be disabled — monitoring will only run when App is open.</td>
+      </tr>
+      <tr>
+        <td>Audio Background Mode</td>
+        <td>To keep the alarm-grade ring audible on the lock screen for up to 30 seconds
+          after a trigger.</td>
+        <td>Used only while an alarm is firing, then immediately released.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>7. Data Security</h2>
+  <p>
+    Because all data is stored locally inside the App's iOS sandbox, it is protected
+    by iOS file-system encryption and isolated from other apps. We never transmit
+    user-generated content over the network.
+  </p>
+</section>
+
+<section>
+  <h2>8. Data Deletion</h2>
+  <p>
+    To delete all data created by the App, simply uninstall the App from your device.
+    iOS will automatically remove the App's sandbox and all locally stored watchlists,
+    rules, and history. There is no server-side copy to delete.
+  </p>
+</section>
+
+<section>
+  <h2>9. Children's Privacy</h2>
+  <p>
+    The App is not directed at children under 13. We do not knowingly collect any
+    information from children. Because the App does not collect personal information
+    from anyone, this policy is uniformly applied.
+  </p>
+</section>
+
+<section>
+  <h2>10. Changes to This Policy</h2>
+  <p>
+    If we materially change this policy, we will update the "Last Updated" date at
+    the top of this page and, where appropriate, surface the change inside the App.
+    Continued use of the App after a change constitutes acceptance of the revised policy.
+  </p>
+</section>
+
+<section>
+  <h2>11. Contact Us</h2>
+  <p>
+    For privacy-related questions, please contact:
+    <a href="mailto:adler0518@users.noreply.github.com">adler0518@users.noreply.github.com</a>
+  </p>
+</section>
+
+<section>
+  <h2>12. Apple App Privacy Labels</h2>
+  <p>The following table summarizes the disclosures used in App Store Connect:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Data Type</th>
+        <th>Collected?</th>
+        <th>Linked to You?</th>
+        <th>Used for Tracking?</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Contact Info</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Health &amp; Fitness</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Financial Info</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Location</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Sensitive Info</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Contacts</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>User Content</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Browsing History</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Search History</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Identifiers</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Purchases</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Usage Data</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Diagnostics</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Other Data</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p class="accent">Summary: Data Not Collected.</p>
+</section>
+
+<footer>
+  © 2026 Stock Alert. This Privacy Policy is provided in English for App Store
+  review and global users. The App itself is fully functional in both Simplified
+  Chinese and English locales.
+</footer>
+
+</div>
+</body>
+</html>
