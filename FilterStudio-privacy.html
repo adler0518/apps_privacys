@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FilterStudio — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f7f7f9;
+    --fg: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #7c5cff;
+    --line: #e5e5ea;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, "PingFang SC", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+  header { text-align: center; margin-bottom: 40px; }
+  header h1 { font-size: 40px; margin: 0 0 8px; font-weight: 700; letter-spacing: -0.02em; }
+  header .sub { color: var(--muted); font-size: 15px; }
+  header .badge {
+    display: inline-block; margin-top: 12px;
+    background: var(--accent); color: #fff;
+    padding: 4px 12px; border-radius: 999px;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  section { background: var(--card); padding: 28px 32px; border-radius: 14px; margin-bottom: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+  section h2 { font-size: 22px; margin: 0 0 12px; font-weight: 700; letter-spacing: -0.01em; }
+  section h3 { font-size: 16px; margin: 16px 0 6px; font-weight: 600; }
+  p { margin: 8px 0; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  ul li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  table th, table td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  table th { background: #f0f0f3; font-weight: 600; }
+  .ok { color: #1aaa55; font-weight: 600; }
+  .no { color: #d12d2d; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 32px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: #f0f0f3; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <div class="sub">FilterStudio · Effective Date: May 18, 2026</div>
+  <div class="badge">100% On-Device · No Tracking</div>
+</header>
+
+<section>
+  <h2>1. Introduction</h2>
+  <p>FilterStudio ("we", "our", "the App") is a photo editing application for iPhone. We respect your privacy. This Privacy Policy explains, in plain language, what FilterStudio does and does not do with your data.</p>
+  <p>The short version: <strong>FilterStudio runs entirely on your device. We do not collect, transmit, sell, or share any personal information.</strong></p>
+</section>
+
+<section>
+  <h2>2. Information We Do NOT Collect</h2>
+  <p>FilterStudio does not collect any of the following:</p>
+  <ul>
+    <li>Personal identifiers (name, email, phone number, address)</li>
+    <li>Account credentials — the App has no account system</li>
+    <li>Device identifiers (IDFA, IDFV, advertising IDs)</li>
+    <li>Location data</li>
+    <li>Contacts, calendars, reminders, or health data</li>
+    <li>Browsing or usage analytics</li>
+    <li>Crash reports beyond Apple's standard, anonymous opt-in mechanism</li>
+  </ul>
+</section>
+
+<section>
+  <h2>3. Data Stored on Your Device</h2>
+  <p>The following data is stored <strong>locally on your iPhone only</strong>, in the App's sandboxed storage. It never leaves your device.</p>
+  <ul>
+    <li><strong>Imported photos</strong> — when you select a photo from your Photos library, FilterStudio reads the image into memory for editing. The image is processed on-device using Apple Core Image and PencilKit.</li>
+    <li><strong>Edit results</strong> — when you tap Save, the edited image is written back to your Photos library through Apple's PHPhotoLibrary API. We never upload or back up this image to any external server.</li>
+    <li><strong>Preferences</strong> — your in-app settings (language preference, last-used filter) are stored in <code>UserDefaults</code> on this device.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>4. Photos Library Access</h2>
+  <p>FilterStudio requests two iOS permissions, both governed by the system permission dialog:</p>
+  <ul>
+    <li><strong>Photo Library — Read</strong> (<code>NSPhotoLibraryUsageDescription</code>): used only when you actively pick a photo to edit.</li>
+    <li><strong>Photo Library — Add Only</strong> (<code>NSPhotoLibraryAddUsageDescription</code>): used only when you tap Save to write an edited image back to Photos.</li>
+  </ul>
+  <p>You may decline either permission. Declining read access disables photo editing; declining add-only access disables saving. You can change these permissions anytime in iOS Settings → FilterStudio.</p>
+</section>
+
+<section>
+  <h2>5. Third-Party Services</h2>
+  <p>FilterStudio integrates <strong>no third-party SDKs</strong>. There are no ad networks, no analytics SDKs (Firebase / Google Analytics / Sensors / etc.), no social login, and no crash reporting beyond Apple's built-in system.</p>
+  <p>The only frameworks the App links against are Apple's own frameworks: SwiftUI, UIKit, PhotosUI, Core Image, and PencilKit.</p>
+</section>
+
+<section>
+  <h2>6. Data Security</h2>
+  <p>Because no data leaves your device, there is no transit channel to attack and no remote database to breach. Your data is protected by iOS sandbox isolation and your device's hardware-backed encryption (Secure Enclave). The App requires iOS 17.0 or later, which enforces modern app sandbox guarantees.</p>
+</section>
+
+<section>
+  <h2>7. Data Deletion</h2>
+  <p>To delete all data associated with FilterStudio, simply uninstall the App. This removes all in-app preferences and any temporary files. Photos saved to your iOS Photos library remain in your library and are managed by you.</p>
+</section>
+
+<section>
+  <h2>8. Children's Privacy</h2>
+  <p>FilterStudio does not knowingly collect any personal information from anyone, including children under 13. Because we collect nothing, there is nothing to associate with any age group. The App is rated 4+.</p>
+</section>
+
+<section>
+  <h2>9. Changes to This Policy</h2>
+  <p>If we materially change this Privacy Policy, we will update the "Effective Date" at the top of this page and update the link surfaced from the App's About / Settings screen. Continued use of the App after such changes constitutes acceptance of the revised policy.</p>
+</section>
+
+<section>
+  <h2>10. Contact Us</h2>
+  <p>Questions, concerns, or feedback about privacy? Please contact:</p>
+  <p>📧 <a href="mailto:filterstudio.support@gmail.com">filterstudio.support@gmail.com</a></p>
+</section>
+
+<section>
+  <h2>11. Apple App Privacy Labels Summary</h2>
+  <p>What FilterStudio reports to App Store Connect under Apple's "App Privacy" framework:</p>
+  <table>
+    <thead>
+      <tr><th>Data Type</th><th>Collected?</th><th>Linked to You?</th><th>Used for Tracking?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Contact Info</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Health &amp; Fitness</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Financial Info</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Location</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Sensitive Info</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Contacts</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>User Content (Photos)</td><td class="no">Not collected — accessed and processed on-device only</td><td>—</td><td>—</td></tr>
+      <tr><td>Browsing History</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Search History</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Identifiers</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Purchases</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Usage Data</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Diagnostics</td><td class="no">No</td><td>—</td><td>—</td></tr>
+      <tr><td>Other Data</td><td class="no">No</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:14px;"><span class="ok">✓</span> Data Not Collected — qualifies for the strongest App Store privacy label.</p>
+</section>
+
+<footer>
+  © 2026 FilterStudio. All rights reserved.<br>
+  Last updated: May 18, 2026
+</footer>
+
+</div>
+</body>
+</html>
