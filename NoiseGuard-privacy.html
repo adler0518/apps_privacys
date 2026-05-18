@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — NoiseGuard</title>
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --fg: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #0071e3;
+    --card: #ffffff;
+    --border: #d2d2d7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.55;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header { margin-bottom: 48px; }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+  p, li { font-size: 16px; color: var(--fg); }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    font-weight: 600;
+    background: #fafafa;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .badge-yes { background: #fff4e5; color: #b25e00; }
+  .badge-no { background: #e8f7ee; color: #1f7a3a; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 32px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  @media (max-width: 540px) {
+    .container { padding: 32px 16px 64px; }
+    h1 { font-size: 32px; }
+    .card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">NoiseGuard — Last updated: May 18, 2026</p>
+  </header>
+
+  <div class="card">
+    <h2>1. Introduction</h2>
+    <p>NoiseGuard ("the App", "we", "us") is a sound level meter and noise logger designed for iPhone. This Privacy Policy explains how NoiseGuard handles information when you use the App. We have built NoiseGuard with privacy as a first-class principle: the App does not require an account, does not connect to our servers, and does not transmit your data anywhere.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Information We Do NOT Collect</h2>
+    <p>NoiseGuard does <strong>not</strong> collect, transmit, sell, or share any of the following:</p>
+    <ul>
+      <li>Personal identifiers (name, email, phone number, Apple ID)</li>
+      <li>Device identifiers (IDFA, advertising ID)</li>
+      <li>Usage analytics or crash reports sent to third parties</li>
+      <li>Audio recordings or decibel readings (these never leave your device)</li>
+      <li>Precise or coarse location (unless you actively save a record while on-device location is available)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. Data Stored on Your Device</h2>
+    <p>The following data is created and stored locally on your iPhone, accessible only by NoiseGuard:</p>
+    <ul>
+      <li><strong>Decibel samples and session statistics</strong> — stored in iOS <code>UserDefaults</code> for the History feature.</li>
+      <li><strong>Audio recordings</strong> — saved as <code>.m4a</code> files inside the App's private Documents directory when you tap the record button. They are never uploaded.</li>
+      <li><strong>App settings</strong> — your alert threshold, vibration preference, and similar UI options.</li>
+      <li><strong>Optional location stamps</strong> — latitude/longitude attached to a saved record only if location permission is granted and you choose to save the session.</li>
+    </ul>
+    <p>This data is fully under your control and is deleted when you delete the App.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Permissions We Request</h2>
+    <table>
+      <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+      <tr><td>Microphone</td><td>Compute real-time decibel readings on device. Audio is processed locally; recordings are saved only when you tap Record.</td><td>Yes (core feature)</td></tr>
+      <tr><td>Location (When In Use)</td><td>Optionally tag saved records with the place where the measurement was taken.</td><td>No (optional)</td></tr>
+    </table>
+    <p>You may revoke any permission at any time in <em>Settings &rarr; NoiseGuard</em>. Revoking microphone access disables measurement; revoking location simply omits location stamps from new records.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. Third-Party Services</h2>
+    <p>NoiseGuard does <strong>not</strong> integrate any third-party analytics, advertising, crash reporting, or attribution SDKs. The App is fully offline-first and contains no network calls to external endpoints.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Data Security</h2>
+    <p>Because NoiseGuard does not transmit your data, there is no server-side risk surface. On-device data is protected by standard iOS sandboxing and the device's hardware-backed encryption when your device is locked with a passcode, Face ID, or Touch ID.</p>
+  </div>
+
+  <div class="card">
+    <h2>7. Data Deletion</h2>
+    <p>To delete all NoiseGuard data:</p>
+    <ul>
+      <li>Open History and remove individual records, <em>or</em></li>
+      <li>Delete the NoiseGuard app from your device. iOS will remove its sandbox, including all decibel records, audio files, and settings.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8. Children's Privacy</h2>
+    <p>NoiseGuard is suitable for general audiences and does not knowingly collect any personal information from children. The App functions identically for all users and contains no in-app purchases, ads, or external links to user-generated content.</p>
+  </div>
+
+  <div class="card">
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the App or in legal requirements. Updates will be posted on this page with a revised "Last updated" date. Material changes will also be communicated through App Store release notes.</p>
+  </div>
+
+  <div class="card">
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or NoiseGuard's data practices, please contact us at:</p>
+    <p><a href="mailto:noiseguard.support@gmail.com">noiseguard.support@gmail.com</a></p>
+  </div>
+
+  <div class="card">
+    <h2>11. Apple App Privacy Labels</h2>
+    <table>
+      <tr><th>Data Type</th><th>Collected</th><th>Linked to You</th><th>Used to Track You</th></tr>
+      <tr><td>Contact Info</td><td><span class="badge badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Health & Fitness</td><td><span class="badge badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Financial Info</td><td><span class="badge badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Location</td><td><span class="badge badge-no">No</span> (stored only on device)</td><td>—</td><td>—</td></tr>
+      <tr><td>Audio Data</td><td><span class="badge badge-no">No</span> (stored only on device)</td><td>—</td><td>—</td></tr>
+      <tr><td>Browsing History</td><td><span class="badge badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Identifiers</td><td><span class="badge badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Usage Data</td><td><span class="badge badge-no">No</span></td><td>—</td><td>—</td></tr>
+      <tr><td>Diagnostics</td><td><span class="badge badge-no">No</span></td><td>—</td><td>—</td></tr>
+    </table>
+    <p style="margin-top:12px;color:var(--muted);font-size:14px;">Summary: <strong>Data Not Collected</strong>. NoiseGuard does not collect any data linked or unlinked to you.</p>
+  </div>
+
+  <footer>
+    &copy; 2026 NoiseGuard. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>
