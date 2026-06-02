@@ -3,64 +3,132 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>隐私政策 – 重拨守候</title>
+<title>重拨守候 — 隐私政策</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 24px; color: #1d1d1f; background: #fff; }
-  h1 { font-size: 28px; font-weight: 700; color: #1A2A4A; }
-  h2 { font-size: 18px; font-weight: 600; margin-top: 32px; color: #1A2A4A; }
-  p, li { font-size: 15px; line-height: 1.8; color: #3d3d3f; }
-  .badge { display: inline-block; background: #FF6B35; color: white; border-radius: 6px; padding: 4px 10px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
-  footer { margin-top: 48px; font-size: 13px; color: #888; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Heiti SC", "Helvetica Neue", sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.7;
+  }
+  header {
+    background: #1d1d1f;
+    color: #f5f5f7;
+    padding: 48px 24px 32px;
+    text-align: center;
+  }
+  header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  header p  { font-size: 14px; color: #a1a1a6; margin-top: 8px; }
+  .container { max-width: 680px; margin: 0 auto; padding: 40px 24px 80px; }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 12px;
+  }
+  .card p, .card li {
+    font-size: 15px;
+    color: #3a3a3c;
+    margin-bottom: 8px;
+  }
+  .card ul { padding-left: 20px; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #166534;
+    margin: 6px 6px 6px 0;
+    font-weight: 500;
+  }
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: #8e8e93;
+    padding: 0 24px 40px;
+  }
 </style>
 </head>
 <body>
-<h1>隐私政策</h1>
-<div class="badge">重拨守候 – 重拨提醒助手</div>
-<p><strong>最后更新：2026 年 6 月 2 日</strong></p>
+<header>
+  <h1>重拨守候</h1>
+  <p>隐私政策 · 最后更新：2026年6月2日</p>
+</header>
+<div class="container">
 
-<h2>我们对您隐私的承诺</h2>
-<p>重拨守候建立在一个简单原则上：<strong>您的数据始终只保存在您的设备上。</strong>我们不收集、传输或在外部服务器上存储任何个人信息。</p>
+  <div class="card">
+    <h2>我们的隐私承诺</h2>
+    <p>重拨守候以隐私为基础设计。我们不收集任何个人数据，不访问通讯录，也不发起任何网络请求。</p>
+    <br>
+    <span class="badge">✓ 不读取通讯录</span>
+    <span class="badge">✓ 不联网</span>
+    <span class="badge">✓ 不上传数据</span>
+    <span class="badge">✓ 数据仅存本机</span>
+  </div>
 
-<h2>我们不收集的信息</h2>
-<ul>
-  <li><strong>不访问通讯录</strong> — 我们从不请求或读取您的手机通讯录。</li>
-  <li><strong>不联网</strong> — 重拨守候完全离线运行，不发起任何网络请求。</li>
-  <li><strong>不上传号码</strong> — 您输入或收藏的任何号码均仅存储在您的设备上。</li>
-  <li><strong>不收集使用数据</strong> — 我们不追踪您如何使用本应用。</li>
-  <li><strong>无广告</strong> — 重拨守候不含任何广告或广告 SDK。</li>
-</ul>
+  <div class="card">
+    <h2>我们收集哪些数据</h2>
+    <p><strong>无。</strong>重拨守候不向任何外部服务器收集、存储或传输个人数据。</p>
+    <p>应用存储的唯一数据是您主动输入的内容（收藏联系人中的电话号码和姓名），且仅存储于您设备本地的 SwiftData 数据库中，从不离开您的设备。</p>
+  </div>
 
-<h2>本地数据存储</h2>
-<p>重拨守候使用 Apple 的 SwiftData 和 UserDefaults 框架将您的收藏和设置存储在本地设备上。这些数据：</p>
-<ul>
-  <li>仅存储在您的设备上</li>
-  <li>仅供重拨守候访问</li>
-  <li>卸载应用时自动删除</li>
-  <li>如您开启了 iCloud 备份，可能通过 iCloud 备份（由 Apple 和您的设备设置完全控制）</li>
-</ul>
+  <div class="card">
+    <h2>拨打电话</h2>
+    <p>重拨守候使用 iOS 的 <code>tel://</code> URL Scheme 发起电话呼叫，由 iOS 原生电话 App 全权处理。本应用不记录、不录音、不传输通话记录。</p>
+  </div>
 
-<h2>通知权限（可选）</h2>
-<p>重拨守候可能请求发送本地通知的权限，仅用于在您设置的间隔到时提醒您重试拨号。这些通知：</p>
-<ul>
-  <li>完全在您的设备本地调度</li>
-  <li>从不发送到任何服务器</li>
-  <li>可随时在 iOS 设置中拒绝或撤销</li>
-</ul>
+  <div class="card">
+    <h2>通知权限</h2>
+    <p>如果您设置了电话提醒，重拨守候会使用 <strong>UNUserNotificationCenter</strong> 在本地排期通知。通知：</p>
+    <ul>
+      <li>完全在设备本地排期，不经过任何服务器</li>
+      <li>您可随时在 iOS 设置中关闭通知权限</li>
+    </ul>
+  </div>
 
-<h2>所有拨号均由用户主动触发</h2>
-<p>重拨守候不会自动拨号，不在后台拨打电话，不规避任何 iOS 限制。每一次拨号都是您主动点击触发的。</p>
+  <div class="card">
+    <h2>无第三方 SDK</h2>
+    <p>重拨守候不集成任何数据分析 SDK、广告框架、崩溃上报服务或追踪库。</p>
+  </div>
 
-<h2>儿童隐私</h2>
-<p>重拨守候不收集任何年龄段用户的信息，适合所有年龄段使用。</p>
+  <div class="card">
+    <h2>申请的权限</h2>
+    <ul>
+      <li><strong>通知</strong> — 仅在使用电话提醒功能时需要。拒绝此权限后，应用其余功能正常使用。</li>
+    </ul>
+    <p style="margin-top:10px;">我们不申请通讯录、麦克风、位置、相机或任何其他敏感系统资源的访问权限。</p>
+  </div>
 
-<h2>政策更新</h2>
-<p>如我们更新隐私政策，将在此发布最新版本。鉴于我们不收集任何数据，重大变更的可能性极低。</p>
+  <div class="card">
+    <h2>儿童隐私</h2>
+    <p>重拨守候不收集任何用户的数据，包括 13 岁以下用户。本应用适合所有年龄段。</p>
+  </div>
 
-<h2>联系我们</h2>
-<p>如有疑问，请联系：<a href="mailto:544627835@qq.com">544627835@qq.com</a></p>
+  <div class="card">
+    <h2>政策变更</h2>
+    <p>如有更新，修订版本将发布在此页面。对于重拨守候这样完全离线、零数据收集的应用，我们预计不会有重大变更。</p>
+  </div>
 
+  <div class="card">
+    <h2>联系我们</h2>
+    <p>如有关于本政策的疑问，请发送邮件至：<strong>544627835@qq.com</strong></p>
+  </div>
+
+</div>
 <footer>
-  <p>© 2026 Xiadu · 重拨守候 – 重拨提醒助手</p>
+  <p>© 2026 Xiadu. 重拨守候 — 隐私政策</p>
 </footer>
 </body>
 </html>
