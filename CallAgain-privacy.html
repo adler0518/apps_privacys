@@ -3,64 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy – Call Again</title>
+<title>Call Again — Privacy Policy</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 24px; color: #1d1d1f; background: #fff; }
-  h1 { font-size: 28px; font-weight: 700; color: #1A2A4A; }
-  h2 { font-size: 18px; font-weight: 600; margin-top: 32px; color: #1A2A4A; }
-  p, li { font-size: 15px; line-height: 1.7; color: #3d3d3f; }
-  .badge { display: inline-block; background: #FF6B35; color: white; border-radius: 6px; padding: 4px 10px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
-  footer { margin-top: 48px; font-size: 13px; color: #888; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.6;
+  }
+  header {
+    background: #1d1d1f;
+    color: #f5f5f7;
+    padding: 48px 24px 32px;
+    text-align: center;
+  }
+  header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  header p  { font-size: 14px; color: #a1a1a6; margin-top: 8px; }
+  .container { max-width: 680px; margin: 0 auto; padding: 40px 24px 80px; }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 12px;
+  }
+  .card p, .card li {
+    font-size: 15px;
+    color: #3a3a3c;
+    margin-bottom: 8px;
+  }
+  .card ul { padding-left: 20px; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #166534;
+    margin: 6px 6px 6px 0;
+    font-weight: 500;
+  }
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: #8e8e93;
+    padding: 0 24px 40px;
+  }
 </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<div class="badge">Call Again – Redial Assistant</div>
-<p><strong>Last updated: June 2, 2026</strong></p>
+<header>
+  <h1>Call Again</h1>
+  <p>Privacy Policy · Last updated June 2, 2026</p>
+</header>
+<div class="container">
 
-<h2>Our Commitment to Your Privacy</h2>
-<p>Call Again is built on a simple principle: <strong>your data stays on your device, always.</strong> We do not collect, transmit, or store any personal information on external servers.</p>
+  <div class="card">
+    <h2>Our Privacy Promise</h2>
+    <p>Call Again is built with privacy as the foundation. We collect no personal data, access no contacts, and make no network requests.</p>
+    <br>
+    <span class="badge">✓ No contacts access</span>
+    <span class="badge">✓ No internet connection</span>
+    <span class="badge">✓ No data uploaded</span>
+    <span class="badge">✓ On-device only</span>
+  </div>
 
-<h2>What We Do NOT Collect</h2>
-<ul>
-  <li><strong>No contacts access</strong> — We never request or read your phone contacts.</li>
-  <li><strong>No network connections</strong> — Call Again operates entirely offline. We make zero outbound network requests.</li>
-  <li><strong>No phone numbers uploaded</strong> — Any numbers you enter or save in favorites remain exclusively on your device.</li>
-  <li><strong>No usage analytics</strong> — We do not track how you use the app.</li>
-  <li><strong>No advertising</strong> — Call Again contains no ads and no ad SDKs.</li>
-</ul>
+  <div class="card">
+    <h2>What Data We Collect</h2>
+    <p><strong>None.</strong> Call Again does not collect, store, or transmit any personal data to external servers.</p>
+    <p>The only data stored is what you explicitly enter (phone numbers and contact names for Favorites), and it is stored exclusively in your device's local SwiftData database. This data never leaves your device.</p>
+  </div>
 
-<h2>Local Data Storage</h2>
-<p>Call Again stores your favorites and settings locally on your device using Apple's SwiftData and UserDefaults frameworks. This data is:</p>
-<ul>
-  <li>Stored only on your device</li>
-  <li>Accessible only to Call Again</li>
-  <li>Automatically deleted when you uninstall the app</li>
-  <li>Backed up via iCloud if you have iCloud Backup enabled (controlled entirely by Apple and your device settings)</li>
-</ul>
+  <div class="card">
+    <h2>Phone Calls</h2>
+    <p>Call Again uses the iOS <code>tel://</code> URL scheme to initiate phone calls. This is handled entirely by iOS's native Phone app. Call Again does not log, record, or transmit call history.</p>
+  </div>
 
-<h2>Notification Permission (Optional)</h2>
-<p>Call Again may request permission to send local notifications, which are used solely to remind you to retry a call at your chosen interval. These notifications:</p>
-<ul>
-  <li>Are scheduled entirely locally on your device</li>
-  <li>Are never sent to any server</li>
-  <li>Can be denied or revoked at any time in iOS Settings</li>
-</ul>
+  <div class="card">
+    <h2>Notifications</h2>
+    <p>If you set a call reminder, Call Again schedules a local notification using <strong>UNUserNotificationCenter</strong>. Notifications are:</p>
+    <ul>
+      <li>Scheduled locally on your device</li>
+      <li>Never transmitted to any server</li>
+      <li>Fully under your control — you can disable them at any time in iOS Settings</li>
+    </ul>
+  </div>
 
-<h2>All Calls Are User-Initiated</h2>
-<p>Call Again does not make automatic calls, does not operate in the background to place calls, and does not circumvent any iOS restrictions. Every call is triggered by a deliberate tap from you.</p>
+  <div class="card">
+    <h2>No Third-Party SDKs</h2>
+    <p>Call Again contains no analytics SDKs, no advertising frameworks, no crash-reporting services, and no tracking libraries of any kind.</p>
+  </div>
 
-<h2>Children's Privacy</h2>
-<p>Call Again does not collect any information from users of any age and is safe for general audiences.</p>
+  <div class="card">
+    <h2>Permissions Requested</h2>
+    <ul>
+      <li><strong>Notifications</strong> — Required only if you use the call reminder feature. You can deny this permission; the rest of the app works without it.</li>
+    </ul>
+    <p style="margin-top:10px;">We do NOT request access to Contacts, Microphone, Location, Camera, or any other sensitive system resource.</p>
+  </div>
 
-<h2>Changes to This Policy</h2>
-<p>If we update this privacy policy, we will post the updated version here. Given that we collect no data, material changes are unlikely.</p>
+  <div class="card">
+    <h2>Children's Privacy</h2>
+    <p>Call Again does not collect any data from any user, including users under the age of 13. The app is safe for all ages.</p>
+  </div>
 
-<h2>Contact</h2>
-<p>Questions? Contact us at: <a href="mailto:544627835@qq.com">544627835@qq.com</a></p>
+  <div class="card">
+    <h2>Changes to This Policy</h2>
+    <p>If we ever update this policy, the revised version will be posted at this URL. For a purely offline, no-data app like Call Again, we do not anticipate significant changes.</p>
+  </div>
 
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Questions about this policy? Reach us at: <strong>544627835@qq.com</strong></p>
+  </div>
+
+</div>
 <footer>
-  <p>© 2026 Xiadu · Call Again – Redial Assistant</p>
+  <p>© 2026 Xiadu. Call Again — Privacy Policy</p>
 </footer>
 </body>
 </html>
