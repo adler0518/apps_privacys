@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智记本 隐私政策</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.8; }
+  .header { background: linear-gradient(135deg, #6366F1, #22D3EE); color: white; padding: 60px 20px; text-align: center; }
+  .header h1 { font-size: 2.5em; font-weight: 700; margin-bottom: 10px; }
+  .header p { font-size: 1.1em; opacity: 0.9; }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: white; border-radius: 18px; padding: 40px; margin-bottom: 24px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+  h2 { font-size: 1.4em; font-weight: 700; color: #1d1d1f; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid #6366F1; }
+  p { margin-bottom: 12px; color: #3d3d3f; }
+  ul { padding-left: 20px; margin-bottom: 12px; }
+  li { margin-bottom: 8px; color: #3d3d3f; }
+  .highlight { background: #f0f0ff; border-left: 4px solid #6366F1; padding: 16px; border-radius: 8px; margin: 16px 0; }
+  .footer { text-align: center; padding: 40px 20px; color: #86868b; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>智记本</h1>
+  <p>隐私政策</p>
+</div>
+<div class="container">
+  <div class="card">
+    <h2>我们的隐私承诺</h2>
+    <div class="highlight">
+      <strong>智记本以隐私保护为核心设计理念。</strong>所有 AI 推理——包括 MiniCPM-V 多模态分析和语音识别——完全在您的设备本地运行。您的数据永不离开您的 iPhone。
+    </div>
+    <p>生效日期：2026 年 6 月 10 日</p>
+  </div>
+
+  <div class="card">
+    <h2>我们不收集的数据</h2>
+    <ul>
+      <li>我们不收集任何个人信息</li>
+      <li>我们不向任何服务器传输您的待办事项、笔记或照片</li>
+      <li>我们不追踪您的使用行为</li>
+      <li>我们不需要账号注册</li>
+      <li>我们不含任何广告 SDK</li>
+      <li>我们不与任何第三方共享数据</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>设备端本地处理</h2>
+    <p>智记本使用以下技术，所有处理均在您的设备本地完成：</p>
+    <ul>
+      <li><strong>llama.cpp + Metal GPU：</strong>本地 AI 推理引擎，用于运行 MiniCPM-V 模型</li>
+      <li><strong>MiniCPM-V：</strong>端侧多模态语言模型，实现图像理解</li>
+      <li><strong>Apple Vision 框架：</strong>系统级 OCR，识别照片中的文字</li>
+      <li><strong>Apple Speech 框架：</strong>语音转文字识别</li>
+    </ul>
+    <p>所有处理均在设备端完成，不在远程服务器执行任何 AI 计算。</p>
+  </div>
+
+  <div class="card">
+    <h2>我们申请的权限</h2>
+    <ul>
+      <li><strong>相机：</strong>拍摄照片用于 OCR 文字识别和 AI 图像分析</li>
+      <li><strong>相册：</strong>选取现有照片进行识别</li>
+      <li><strong>麦克风：</strong>录制语音输入用于语音转文字</li>
+      <li><strong>语音识别：</strong>处理语音录音转换为文字</li>
+    </ul>
+    <p>所有权限数据均在本地处理。您可以拒绝任何权限，相关功能将被禁用。</p>
+  </div>
+
+  <div class="card">
+    <h2>数据存储</h2>
+    <p>您的待办事项和笔记使用 Swift Data（Apple 本地数据库框架）存储在设备本地。这些数据永不对外传输。如果您启用了 iCloud，这些数据将包含在您的 iCloud 备份中（由您的 iOS 设置控制，而非智记本）。</p>
+  </div>
+
+  <div class="card">
+    <h2>儿童隐私</h2>
+    <p>智记本不会故意收集 13 岁以下儿童的信息。由于我们不收集任何用户的个人数据，因此不存在儿童隐私方面的特殊问题。</p>
+  </div>
+
+  <div class="card">
+    <h2>政策变更</h2>
+    <p>我们可能会不时更新本隐私政策。任何变更将在本页面的更新版本中体现。继续使用 App 即表示接受更新后的政策。</p>
+  </div>
+
+  <div class="card">
+    <h2>联系我们</h2>
+    <p>如有任何关于本隐私政策的问题，请联系：</p>
+    <p><strong>邮箱：</strong>544627835@qq.com</p>
+  </div>
+</div>
+<div class="footer">
+  <p>© 2026 智记本. 保留所有权利。</p>
+</div>
+</body>
+</html>
